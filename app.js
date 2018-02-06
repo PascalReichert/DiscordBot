@@ -10,4 +10,4 @@ bot.on('ready', () => {
 
 });
 
-bot.login('NDEwMzQ4NzY0Nzg4ODE3OTIw.DVr3iw.FKER_BCVjXAzGHHppWKQAA7WuSQ')
+bot.login(proces.env.BOT_TOKEN)
