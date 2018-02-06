@@ -1,5 +1,8 @@
 var Discord = require('discord.js');
 var bot = new Discord.Client();
+var fs = require('fs');
+
+var commandsList = fs.readFileSync('Storage/commands.txt', 'utf8');
 
 bot.on('message', message => {
     
@@ -8,6 +11,11 @@ bot.on('message', message => {
     var prefix = '!'
     var cont = message.content.slice(prefix.length).split(" ");
     var args = cont.slice(1);
+    
+    if (msg === prefix + 'HELP' || msg === prefix + 'COMMANDS')
+    {
+      message.channel.send(commandsList)
+    }
     
     if(msg === prefix + 'PING')
     {
@@ -22,4 +30,4 @@ bot.on('ready', () => {
 
 });
 
-bot.login('NDEwMzQ4NzY0Nzg4ODE3OTIw.DVsZSA.wDyIUXtH7xkla7IYu82dSNKJTh4')
+bot.login(process.env.BOT_TOKEN);
