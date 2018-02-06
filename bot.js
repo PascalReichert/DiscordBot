@@ -21,6 +21,7 @@ bot.on('message', message => {
     {
         message.channel.send('Pong! Ping = **' + bot.ping + '**')
     }
+}
 
 bot.on('ready', () => {
     console.log('Bot Launched...')
