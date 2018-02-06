@@ -1,10 +1,6 @@
 var Discord = require('discord.js');
-var economy = require('discord-eco');
 var bot = new Discord.Client();
 var fs = require('fs');
-var moment = require('moment');
-
-var userData = JSON.parse(fs.readFileSync('Storage/userData.json', 'utf8'));
 
 //functions
 
