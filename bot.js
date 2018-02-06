@@ -3,7 +3,7 @@ var bot = new Discord.Client();
 var fs = require('fs');
 
 //functions
-
+var commandsList = fs.readFileSync('Storage/commands.txt', 'utf8');
 
 //Listener Event: Message Received (this will run every time a message is received)
 bot.on('message', message => {
