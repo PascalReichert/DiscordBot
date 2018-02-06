@@ -2,6 +2,8 @@ var Discord = require('discord.js');
 var bot = new Discord.Client();
 var fs = require('fs');
 
+bot.user.setGame('fontys.nl/uitschrijven')
+
 //functions
 var commandsList = fs.readFileSync('Storage/commands.txt', 'utf8');
 
