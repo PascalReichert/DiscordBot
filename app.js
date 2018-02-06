@@ -22,4 +22,4 @@ bot.on('ready', () => {
 
 });
 
-bot.login(proces.env.BOT_TOKEN)
+bot.login('NDEwMzQ4NzY0Nzg4ODE3OTIw.DVsZSA.wDyIUXtH7xkla7IYu82dSNKJTh4')
