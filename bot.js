@@ -15,7 +15,7 @@ bot.on('message', message => {
     //Variables
     var sender = message.author; //the person who sent the message
     var msg = message.content.toUpperCase(); //takes message and makes it all uppercase
-    var prefix = '!' //the text before commands
+    var prefix = '!'; //the text before commands
     var cont = message.content.slice(prefix.length).split(" ");
     var args = cont.slice(1);
 
