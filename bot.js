@@ -30,13 +30,13 @@ bot.on('message', message => {
     //help command
     if (msg === prefix + 'HELP' || msg === prefix + 'COMMANDS')
     {
-      message.channel.send(commandsList)
+      message.channel.send(commandsList);
     }
 
     //ping/pong command
     if(msg === prefix + 'PING')
     {
-        message.channel.send('Pong! Ping = **' + bot.ping + '**')
+        message.channel.send('Pong! Ping = **' + bot.ping + '**');
     }
 });
 
